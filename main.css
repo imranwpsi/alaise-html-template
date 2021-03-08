@@ -10055,9 +10055,9 @@ a:hover {
 }
 
 .main-nav li a {
-  font-size: 60px;
+  font-size: 30px;
   color: #000;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 80px;
 }
 
@@ -10116,6 +10116,56 @@ a:hover {
   color: #000;
   font-size: 40px;
   margin: 0;
+}
+
+.full-menu .fullscreenmenu .custom-logo-link {
+  float: left;
+  margin-left: 30px;
+}
+.full-menu .fullscreenmenu ul.nav-menu li {
+  border-bottom: 0 !important;
+  outline: none;
+}
+.full-menu .fullscreenmenu ul.nav-menu li:nth-child(odd) {
+  font-size: 25px !important;
+  font-weight: 500;
+}
+.full-menu .nav-menu li:nth-child(even) {
+  font-size: 15px;
+  position: relative;
+  top: -15px;
+  font-weight: 500;
+}
+.full-menu .contact-section {
+  background: #ebeae8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 50px 10px;
+  text-align: center;
+}
+.full-menu .contact-section .contact-btn {
+  background: #d7c0a1;
+  padding: 15px 100px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+.full-menu ul.social-icons {
+  list-style: none;
+  margin: 28px 0 0 0;
+  padding: 0;
+}
+.full-menu ul.social-icons li {
+  display: inline-block;
+}
+.full-menu .social-icons a {
+  text-decoration: none;
+  color: red;
+  padding: 6px 10px;
+  display: inline-block;
 }
 
 /* Full Menu End */
