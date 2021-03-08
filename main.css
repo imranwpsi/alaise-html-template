@@ -10648,7 +10648,7 @@ a:hover {
 .error-container-wrapper .wpb_wrapper h5 {
   font-size: 23px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 .error-container-wrapper .wpb_message_wrapper {
   height: 48px;
@@ -10667,7 +10667,7 @@ a:hover {
   height: 67px;
   padding: 20px;
   text-align: center;
-  font-family: monospace;
+  font-family: sans-serif;
   font-size: 20px;
   font-weight: bold;
   display: inline-block;
