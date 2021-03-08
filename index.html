@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alaise</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
     <nav class="navbar navbar-expand-sm fixed-top p-0">
@@ -16,19 +16,34 @@
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link menu-toggle" href="javascript:void(0)">Menu</a>
+                    <a class="nav-link menu-toggle d-xs-none" href="javascript:void(0)">Menu</a>
 
                     <div class="full-menu">
-                        <div class="full-menu--middle">
-                            <button class="menu-toggle menu-toggle--close">
-                                <span class="icon-close"></span>
-                            </button>
+                        <div class="full-menu--top">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="custom-logo-link" href="/" rel="home">
+                                        <img src="asset/image/logo.png" class="img-fluid ml-5 mt-4" alt="Logo" width="153">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:void(0)" class="menu-toggle menu-toggle--close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 40px">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
 
                             <ul class="main-nav">
                                 <li><a href="index.html">Top</a></li>
+                                <li><a href="index.html">TOPページ</a></li>
                                 <li><a href="about.html">About</a></li>
+                                <li><a href="about.html">アレーズ について</a></li>
                                 <li><a href="price.html">Price</a></li>
+                                <li><a href="price.html">料金</a></li>
                                 <li><a href="access.html">Access</a></li>
+                                <li><a href="access.html">アクセス</a></li>
                             </ul>
 
                             <div class="contact-section">
@@ -52,8 +67,13 @@
                     </div>
 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-xs-none">
                     <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="d-none d-xs-block menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 40px">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
                 </li>
             </ul>
         </div>
@@ -184,20 +204,13 @@
                 </div>
             </div>
             <div class="col-md-6 p-0">
-                <div class="footer-contact-campaign">
-                    <div class="footer-contact-campaign__image" style="background-image: url('asset/image/contact-1.png')">
-                        <div class="footer-contact-campaign__info">
-                            <p class="footer-contact-campaign__small">SPECIAL CAMPAIGN</p>
-                            <div class="footer-contact-campaign__big">証明写真オンライン予約</div>
-                        </div>
-                    </div>
-
-                    <div class="footer-contact-campaign__image" style="background-image: url('asset/image/contact-2.png')">
-                        <div class="footer-contact-campaign__info">
-                            <p class="footer-contact-campaign__small">SPECIAL CAMPAIGN</p>
-                            <div class="footer-contact-campaign__big">証明写真焼き増しのご注文</div>
-                        </div>
-                    </div>
+                <div class="footer-links">
+                    <a href="https://reserve.kouchou.jp/PhotoReservationCustomer/faces/ReserveCalendar.xhtml?store=13" target="_blank" rel="noopener">
+                        <img src="https://alaise.tokyo/wp-content/uploads/2021/02/footer-link1.png" alt="証明写真オンライン予約" class="img-fluid">
+                    </a>
+                    <a href="https://reserve.kouchou.jp/PhotoReservationCustomer/faces/ReprintOrderBefore.xhtml?store=13" target="_blank">
+                        <img src="https://alaise.tokyo/wp-content/uploads/2021/02/footer-link2.png" alt="証明写真焼き増しのご注文" class="img-fluid">
+                    </a>
                 </div>
             </div>
         </div>
