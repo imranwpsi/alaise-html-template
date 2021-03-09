@@ -9980,6 +9980,12 @@ h3 {
     margin-bottom: 60px;
     max-width: initial !important;
   }
+
+  #price-page .sub--box.with--plus:after {
+    left: 50%;
+    top: 50% !important;
+    transform: translate(-50%, 50%);
+  }
 }
 @media screen and (max-width: 755px) {
   /* News section start */
