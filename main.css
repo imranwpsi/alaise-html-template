@@ -10115,11 +10115,28 @@ a:hover {
 .main-menu-wrapper.navbar-bg {
   background: #E0C1A1;
 }
+.main-menu-wrapper.navbar-bg .navbar-brand {
+  margin: 0;
+}
 
 .navbar .nav-link {
   color: #181818;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.navbar-brand {
+  margin-top: 15px;
+}
+
+.custom-logo-link img {
+  width: 158px;
+  height: auto;
+}
+
+.full-menu .custom-logo-link img {
+  margin-top: 15px;
+  margin-left: 40px;
 }
 
 /* Full Menu Start */
@@ -10132,12 +10149,17 @@ a:hover {
 .main-nav li a {
   text-decoration: none;
 }
-.main-nav li:nth-child(odd) a {
+.main-nav li a:hover, .main-nav li a:focus {
+  background: transparent;
+  outline: none;
+  color: initial;
+}
+.main-nav > li:nth-child(odd) a {
   font-size: 25px;
   margin-top: 10px;
   display: inline-block;
 }
-.main-nav li:nth-child(even) a {
+.main-nav > li:nth-child(even) a {
   font-size: 15px;
   position: relative;
   top: -7px;
@@ -10248,6 +10270,12 @@ a:hover {
   color: #E0C1A1;
   padding: 6px;
   display: inline-block;
+}
+
+#contact-section .footer-icons {
+  float: initial;
+  margin: 28px 0 0 0;
+  padding: 0;
 }
 
 /* Full Menu End */
