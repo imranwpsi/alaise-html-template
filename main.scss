@@ -743,12 +743,26 @@ a:hover {
 $small-screen: 375px;
 $medium-screen: 757px;
 @media screen and (max-width: $small-screen) {
+  .photo__reprint {
+    a {
+      width: 100%;
+      max-width: none;
+      font-size: 18px!important;
+    }
+    .external--link { text-align: left; }
+    i { font-size: 18px!important; }
+  }
   body {
+    #price-page {
+      .sub--box {
+        max-width: none;
+      }
+    }
     .footer-contact {
       width: 100%;
       .footer-contact__tel { font-size: 38px; }
     }
-      .error-container-wrapper {
+    .error-container-wrapper {
         .wpb_wrapper {
           padding-left: 0;
           h1 { font-size: 38px; }
@@ -764,6 +778,14 @@ $medium-screen: 757px;
 
 @media screen and (max-width: $medium-screen) {
   body {
+    .photo__reprint {
+      a { width: 100%; max-width: none; }
+    }
+    #price-page {
+      .sub--box {
+        max-width: none;
+      }
+    }
     .contact-wrapper {
       .form-group {
         label { display: none;  }
