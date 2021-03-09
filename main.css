@@ -9988,6 +9988,20 @@ h3 {
   }
 }
 @media screen and (max-width: 755px) {
+  /* Navbar start */
+  .full-menu {
+    height: 100% !important;
+  }
+
+  .main-nav {
+    height: calc(100% - 248px);
+  }
+
+  .full-menu .contact-section {
+    padding: 15px !important;
+  }
+
+  /* Navbar end */
   /* News section start */
   .news .new__section--list-item .news__section--list-date {
     text-align: left !important;
@@ -10149,8 +10163,9 @@ a:hover {
 .main-nav {
   list-style: none;
   padding: 0;
-  margin-top: 80px;
   text-align: center;
+  height: calc(100% - 310px);
+  overflow-y: scroll;
 }
 .main-nav li a {
   text-decoration: none;
@@ -10170,6 +10185,10 @@ a:hover {
   position: relative;
   top: -7px;
   font-weight: 500;
+}
+.main-nav::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 .full-menu {
@@ -10248,7 +10267,7 @@ a:hover {
 }
 .full-menu .contact-section {
   background: #ebeae8;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 50px 10px;

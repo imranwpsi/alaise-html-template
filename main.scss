@@ -83,8 +83,9 @@ a:hover {
 .main-nav {
   list-style: none;
   padding: 0;
-  margin-top: 80px;
   text-align: center;
+  height: calc(100% - 310px);
+  overflow-y: scroll;
 
   li a {
     text-decoration: none;
@@ -105,7 +106,10 @@ a:hover {
     top: -7px;
     font-weight: 500;
   }
-
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
 
 .full-menu {
@@ -179,7 +183,7 @@ a:hover {
   }
   .contact-section {
     background: #ebeae8;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 50px 10px;

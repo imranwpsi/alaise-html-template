@@ -18,6 +18,17 @@
 }
 
 @media screen and (max-width: 755px) {
+  /* Navbar start */
+  .full-menu {
+    height: 100% !important;
+  }
+  .main-nav {
+    height: calc(100% - 248px);
+  }
+  .full-menu .contact-section {
+    padding: 15px !important;
+  }
+  /* Navbar end */
   /* News section start */
   .news .new__section--list-item .news__section--list-date {
     text-align: left !important;
