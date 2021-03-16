@@ -1,0 +1,12 @@
+@import "variable";
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+
+@media screen and (max-width: $screen-end-tab) {
+  .access-google-link {
+    max-width: initial !important;
+  }
+}
+.access-google-link {
+  max-width: 100%;
+  min-width: 100%;
+}
