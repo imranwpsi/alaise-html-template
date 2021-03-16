@@ -10043,6 +10043,19 @@ h3 {
   }
 }
 /* Large tap to small-pc end */
+@media screen and (min-width: 1920px) {
+  .memory__section .memory__section--img {
+    background-position: center 28% !important;
+  }
+
+  .profile__section .profile__section--img {
+    background-position: center 28% !important;
+  }
+
+  .family-photo__section .family-photo__section--img {
+    background-position: center 28% !important;
+  }
+}
 @media screen and (max-width: 853px) {
   .access-google-link {
     max-width: initial !important;
@@ -11012,44 +11025,13 @@ a:hover {
 .memory__section {
   background: #FEFBF9;
 }
-.memory__section .memory__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-}
 
-.id-photo__section--img {
+.memory__section--img, .id-photo__section--img, .profile__section--img, .family-photo__section--img, .cloth__section--img, .hair-makeup__section--img {
   background-size: cover !important;
   height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
   background-position: center !important;
-}
-
-.profile__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
   background-repeat: no-repeat !important;
-  background-position: center !important;
-}
-
-.cloth__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-}
-
-.hair-makeup__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  margin: 20px 0;
 }
 
 .sub--box {
@@ -11089,7 +11071,7 @@ a:hover {
   font-size: 50px;
   font-weight: 600;
   color: #E0C1A1;
-  margin: 24px auto;
+  margin: 19px auto;
   position: absolute;
   right: -60px;
   top: 0;

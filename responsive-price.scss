@@ -91,5 +91,22 @@
 /* Large tap to small-pc end */
 
 @media screen and (min-width: $screen-start-large-pc) {
+  .memory__section .memory__section--img {
+    background-position: center 28% !important;
+  }
+  .id-photo__section .id-photo__section--img {
 
+  }
+  .profile__section .profile__section--img {
+    background-position: center 28% !important;
+  }
+  .family-photo__section .family-photo__section--img {
+    background-position: center 28% !important;
+  }
+  .cloth__section .cloth__section--img {
+
+  }
+  .hair-makeup__section .hair-makeup__section--img {
+
+  }
 }

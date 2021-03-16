@@ -626,42 +626,13 @@ a:hover {
 
 .memory__section {
   background: $color2;
-
-  .memory__section--img {
-    background-size: cover !important;
-    height: 278px;
-    margin: 54px 0 20px 0;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
 }
-.id-photo__section--img {
+.memory__section--img, .id-photo__section--img, .profile__section--img, .family-photo__section--img, .cloth__section--img, .hair-makeup__section--img {
   background-size: cover !important;
   height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
   background-position: center !important;
-}
-.profile__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
   background-repeat: no-repeat !important;
-  background-position: center !important;
-}
-.cloth__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-}
-.hair-makeup__section--img {
-  background-size: cover !important;
-  height: 278px;
-  margin: 54px 0 20px 0;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  margin: 20px 0;
 }
 .sub--box {
   width: 100%;
@@ -702,7 +673,7 @@ a:hover {
   font-size: 50px;
   font-weight: 600;
   color: $color-primary;
-  margin: 24px auto;
+  margin: 19px auto;
   position: absolute;
   right: -60px;
   top: 0;
