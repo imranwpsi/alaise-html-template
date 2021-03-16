@@ -81,6 +81,15 @@
 }
 /* Large tap to small-pc end */
 
+/* Large tab to small-pc start */
+@media screen and (min-width: $screen-start-mobile) and (max-width: 1199px) {
+  .w-100 {
+    width: 100% !important;
+    max-width: initial !important;
+  }
+}
+/* Large tap to small-pc end */
+
 @media screen and (min-width: $screen-start-large-pc) {
 
 }

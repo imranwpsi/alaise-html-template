@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap");
 @font-face {
   font-family: "icomoon";
   src: url("asset/fonts/icomoon.eot?jz1pe8");
@@ -10034,6 +10035,24 @@ h3 {
   }
 }
 /* Large tap to small-pc end */
+/* Large tab to small-pc start */
+@media screen and (min-width: 375px) and (max-width: 1199px) {
+  .w-100 {
+    width: 100% !important;
+    max-width: initial !important;
+  }
+}
+/* Large tap to small-pc end */
+@media screen and (max-width: 853px) {
+  .access-google-link {
+    max-width: initial !important;
+  }
+}
+.access-google-link {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 @media screen and (max-width: 1366px) {
   /* Navbar full menu start */
   .full-menu .custom-logo-link img {
