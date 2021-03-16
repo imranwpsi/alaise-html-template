@@ -670,7 +670,7 @@ a:hover {
   text-align: center;
   position: relative;
   margin-right: 40px;
-  height: 125px;
+  height: 115px;
   display: table;
   max-width: 270px;
   border: 1px solid #EBEAE8;
@@ -687,9 +687,13 @@ a:hover {
     .sum--title {
       font-size: 14px;
     }
+    .sum--title:nth-child(2) {
+      font-weight: bold;
+    }
     .sum--amount {
-      font-size: 22px;
+      font-size: 25px;
       margin-top: 10px;
+      font-weight: bold;
     }
   }
 }
@@ -916,11 +920,6 @@ $medium-screen: 757px;
   body {
     .photo__reprint {
       a { width: 100%; max-width: none; }
-    }
-    #price-page {
-      .sub--box {
-        max-width: none;
-      }
     }
     .contact-wrapper {
       .form-group {

@@ -24,10 +24,13 @@
     display: block !important;
   }
   .box--wrapper .sub--box {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     max-width: initial !important;
     &:last-child {
       margin-bottom: 0;
+    }
+    &.with--plus {
+      margin-bottom: 60px;
     }
   }
   .sub--box.with--plus:after {
@@ -182,9 +185,6 @@
   }
   .px-20-mobile {
     padding: 0 20px;
-  }
-  .reprint__section .col-6:nth-child(odd) {
-    padding-right: 0;
   }
   .profile__section {
     .inner--line:after {

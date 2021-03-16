@@ -51,13 +51,35 @@
 
 }
 
-/* Both mobile & tab start */
+/* Mobile to pc start */
+@media screen and (min-width: $screen-start-mobile) and (max-width: $screen-end-pc) {
+  .box--col {
+    padding: 0 10px;
+  }
+  .reprint__section .col-6:nth-child(odd) {
+    padding-right: 0;
+  }
+  .sub--box {
+    margin-top: 10px !important;
+  }
+}
+/* Mobile to pc end */
+
+/* Mobile to tab start */
 @media screen and (min-width: $screen-start-mobile) and (max-width: $screen-end-tab) {
   .memory__section .memory__section--img {
     margin-top: 20px !important;
   }
 }
-/* Both mobile & tab end */
+/* Mobile to tab end */
+
+/* Large tab to small-pc start */
+@media screen and (min-width: $screen-start-large-tab) and (max-width: 1199px) {
+  .reprint__section .sub--box .box--inner {
+    height: 200px !important;
+  }
+}
+/* Large tap to small-pc end */
 
 @media screen and (min-width: $screen-start-large-pc) {
 

@@ -10005,13 +10005,35 @@ h3 {
 
   /* cover image end */
 }
-/* Both mobile & tab start */
+/* Mobile to pc start */
+@media screen and (min-width: 375px) and (max-width: 1919px) {
+  .box--col {
+    padding: 0 10px;
+  }
+
+  .reprint__section .col-6:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  .sub--box {
+    margin-top: 10px !important;
+  }
+}
+/* Mobile to pc end */
+/* Mobile to tab start */
 @media screen and (min-width: 375px) and (max-width: 853px) {
   .memory__section .memory__section--img {
     margin-top: 20px !important;
   }
 }
-/* Both mobile & tab end */
+/* Mobile to tab end */
+/* Large tab to small-pc start */
+@media screen and (min-width: 854px) and (max-width: 1199px) {
+  .reprint__section .sub--box .box--inner {
+    height: 200px !important;
+  }
+}
+/* Large tap to small-pc end */
 @media screen and (max-width: 1366px) {
   /* Navbar full menu start */
   .full-menu .custom-logo-link img {
@@ -10042,11 +10064,14 @@ h3 {
   }
 
   .box--wrapper .sub--box {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     max-width: initial !important;
   }
   .box--wrapper .sub--box:last-child {
     margin-bottom: 0;
+  }
+  .box--wrapper .sub--box.with--plus {
+    margin-bottom: 60px;
   }
 
   .sub--box.with--plus:after {
@@ -10232,10 +10257,6 @@ h3 {
 
   .px-20-mobile {
     padding: 0 20px;
-  }
-
-  .reprint__section .col-6:nth-child(odd) {
-    padding-right: 0;
   }
 
   .profile__section .inner--line:after {
@@ -11018,7 +11039,7 @@ a:hover {
   text-align: center;
   position: relative;
   margin-right: 40px;
-  height: 125px;
+  height: 115px;
   display: table;
   max-width: 270px;
   border: 1px solid #EBEAE8;
@@ -11034,9 +11055,13 @@ a:hover {
 .sub--box .box--inner .sum--title {
   font-size: 14px;
 }
+.sub--box .box--inner .sum--title:nth-child(2) {
+  font-weight: bold;
+}
 .sub--box .box--inner .sum--amount {
-  font-size: 22px;
+  font-size: 25px;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .sub--box.with--plus:after {
@@ -11294,9 +11319,6 @@ a.contact__policy-link {
 @media screen and (max-width: 757px) {
   body .photo__reprint a {
     width: 100%;
-    max-width: none;
-  }
-  body #price-page .sub--box {
     max-width: none;
   }
   body .contact-wrapper .form-group .wpcf7-form-control-wrap {
