@@ -11,7 +11,7 @@
 <body>
 <div id="price-page">
     <nav class="navbar navbar-expand-sm fixed-top p-0 fixed-navbar-bg">
-        <div class="container px-40 main-menu-wrapper">
+        <div class="container-fluid px-40 main-menu-wrapper">
             <a class="navbar-brand" href="index.html">
                 <img src="asset/image/logo.png" alt="Logo" width="158">
             </a>
@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <section class="container hero">
+    <section class="container-fluid hero">
         <div class="row">
             <div class="col-md-12">
                 <div class="hero__section px-40 py-40">
@@ -90,42 +90,37 @@
         </div>
     </section>
 
-    <section class="container contact-section">
+    <section class="container-fluid contact-section">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 contact-section--col">
                 <div class="footer-contact">
-                    <div class="footer-contact__title">CONTACT</div>
-                    <div class="footer-contact__inner">
-                        <div class="footer-contact__tel">03-3445-3410</div>
-                        <div class="footer-contact__text">お電話での受付時間 10:00-19:00<br>定休日：木曜日</div>
+                    <div class="footer-contact--wrapper">
+                        <div class="footer-contact__title">CONTACT</div>
+                        <div class="footer-contact__inner">
+                            <div class="footer-contact__tel">03-3445-3410</div>
+                            <div class="footer-contact__text">お電話での受付時間 10:00-19:00<br>定休日：木曜日</div>
+                        </div>
+                        <div class="footer-contact__inner">
+                            <a class="footer-contact__link text-decoration-none" href="#">CONTACT</a>
+                        </div>
+                        <div class="footer-contact__text">ご相談やご質問はお問い合わせから</div>
                     </div>
-                    <div class="footer-contact__inner">
-                        <a class="footer-contact__link text-decoration-none" href="#">CONTACT</a>
-                    </div>
-                    <div class="footer-contact__text">ご相談やご質問はお問い合わせから</div>
                 </div>
             </div>
-            <div class="col-md-6 p-0">
-                <div class="footer-contact-campaign">
-                    <div class="footer-contact-campaign__image" style="background-image: url('asset/image/contact-1.png')">
-                        <div class="footer-contact-campaign__info">
-                            <p class="footer-contact-campaign__small">SPECIAL CAMPAIGN</p>
-                            <div class="footer-contact-campaign__big">証明写真オンライン予約</div>
-                        </div>
-                    </div>
-
-                    <div class="footer-contact-campaign__image" style="background-image: url('asset/image/contact-2.png')">
-                        <div class="footer-contact-campaign__info">
-                            <p class="footer-contact-campaign__small">SPECIAL CAMPAIGN</p>
-                            <div class="footer-contact-campaign__big">証明写真焼き増しのご注文</div>
-                        </div>
-                    </div>
+            <div class="col-md-6 contact-section--col p-0">
+                <div class="footer-links">
+                    <a href="https://reserve.kouchou.jp/PhotoReservationCustomer/faces/ReserveCalendar.xhtml?store=13" target="_blank" rel="noopener">
+                        <img src="https://alaise.tokyo/wp-content/uploads/2021/02/footer-link1.png" alt="証明写真オンライン予約" class="img-fluid">
+                    </a>
+                    <a href="https://reserve.kouchou.jp/PhotoReservationCustomer/faces/ReprintOrderBefore.xhtml?store=13" target="_blank">
+                        <img src="https://alaise.tokyo/wp-content/uploads/2021/02/footer-link2.png" alt="証明写真焼き増しのご注文" class="img-fluid">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container footer-section p-0">
+    <section class="container-fluid footer-section p-0">
         <footer class="footer_copyright">
             <div class="row">
                 <div class="footer-right col-lg-7 col-md-8 col-sm-7 col-xs-12">

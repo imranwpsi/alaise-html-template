@@ -1,0 +1,64 @@
+@import "variable";
+
+@media screen and (min-width: $screen-start-mobile) and (max-width: $screen-end-mobile) {
+
+}
+
+@media screen and (min-width: $screen-start-tab) and (max-width: $screen-end-tab) {
+  .hero .hero__section {
+    padding-top: 30px !important;
+  }
+  .hero__section-sub-title {
+    margin: 0 !important;
+  }
+  .hero__section--info {
+    position: absolute;
+    z-index: 1;
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, 50%);
+    margin-top: 100px;
+  }
+  .hero__col {
+    max-width: initial;
+    flex: 100%;
+    &.p-0-tab {
+      padding: 0 !important;
+    }
+    .hero__section--left-img {
+      padding: 0;
+    }
+  }
+
+  /* cover image start */
+  .memory__section .memory__section--img {
+    height: 594px !important;
+  }
+  /* cover image end */
+}
+
+@media screen and (min-width: $screen-start-large-tab) and (max-width: $screen-end-large-tab) {
+
+}
+
+@media screen and (min-width: $screen-start-small-pc) and (max-width: $screen-end-small-pc) {
+
+}
+
+@media screen and (min-width: $screen-start-pc) and (max-width: $screen-end-pc) {
+
+}
+
+/* Both mobile & tab start */
+@media screen and (min-width: $screen-start-mobile) and (max-width: $screen-end-tab) {
+  .memory__section .memory__section--img {
+    margin-top: 20px !important;
+  }
+}
+/* Both mobile & tab end */
+
+@media screen and (min-width: $screen-start-large-pc) {
+
+}

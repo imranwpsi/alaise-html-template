@@ -1,7 +1,24 @@
-.footer-links img {
-  min-height: 176px;
-}
+@import "responsive-price";
 
+@media screen and (max-width: 1366px) {
+  /* Navbar full menu start */
+  .full-menu .custom-logo-link img {
+    margin-top: 10px !important;
+  }
+  .menu-toggle--close {
+    top: 10px !important;
+  }
+  .main-nav > li:nth-child(odd) a {
+    font-size: 22px !important;
+  }
+  .main-nav > li:nth-child(even) a {
+    font-size: 13px !important;
+  }
+  .full-menu .contact-section {
+    padding: 20px 10px !important;
+  }
+  /* Navbar full menu end */
+}
 @media screen and (max-width: 1199px) {
   .box--wrapper {
     display: block !important;
@@ -9,12 +26,26 @@
   .box--wrapper .sub--box {
     margin-bottom: 60px;
     max-width: initial !important;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-  #price-page .sub--box.with--plus:after {
+  .sub--box.with--plus:after {
     left: 50%;
-    top: 50% !important;
+    top: 40% !important;
     transform: translate(-50%, 50%);
   }
+  /* Price Page Start */
+  .photo__reprint a {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    max-width: inherit;
+  }
+  .sub--box {
+    max-width: initial !important;
+  }
+  /* Price Page End */
 }
 
 @media screen and (max-width: 755px) {
@@ -29,12 +60,25 @@
     padding: 15px !important;
   }
   /* Navbar end */
+  /* Hero section start */
+  .hero__section {
+    padding-top: 45px !important;
+    padding-bottom: 0 !important;
+  }
+  .hero .hero__section-title {
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+  /* Hero section end */
   /* News section start */
   .news .new__section--list-item .news__section--list-date {
     text-align: left !important;
   }
   /* News section end */
   /* Footer Responsive start */
+  .contact--btn {
+    max-width: initial !important;
+  }
   .xs-break {
     display: block;
     margin: 0 !important;
@@ -63,9 +107,115 @@
   .contact-section--col:nth-child(2) {
     order: 1;
   }
+  .footer-contact {
+    min-width: initial;
+  }
+  .px-40 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .py-40 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .footer-contact__tel {
+    font-size: 25px !important;
+    background: $color-primary;
+    margin-bottom: 5px;
+    line-height: 68px;
+    height: 68px;
+  }
   /* Footer Responsive start */
+
+  /* About Page Start */
+  .about-history .about-history__section--title:after {
+    width: calc(100% - 90px) !important;
+  }
+  .about.hero {
+    min-height: initial;
+    background-position: 82% !important;
+  }
+  /* About Page End */
+
+  /* Price Page Start */
+  .hero .hero__section-sub-title {
+    margin-bottom: 15px !important;
+  }
+  .p-0-mobile {
+    padding: 0 !important;
+  }
+  .hero__section--info {
+    position: absolute;
+    z-index: 1;
+    padding: 30px;
+    left: 0;
+    top: 265px;
+    color: #fff;
+  }
+  .hero__section--left-img img {
+    margin: 0 !important;
+  }
+  .hero__section--left-img {
+    padding: 0 !important;
+  }
+  .cta__tel {
+    font-size: 47px;
+    background: $color-primary;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    height: 68px;
+    line-height: 66px !important;
+  }
+  .inner--line {
+    padding: 35px 20px 0 20px;
+  }
+  .inner--line:after {
+    width: calc(100% - 100px) !important;
+    top: 45px !important;
+    left: 100px !important;
+  }
+  .box--wrapper {
+    padding: 20px;
+  }
+  .p-20-mobile {
+    padding: 20px !important;
+  }
+  .px-20-mobile {
+    padding: 0 20px;
+  }
+  .reprint__section .col-6:nth-child(odd) {
+    padding-right: 0;
+  }
+  .profile__section {
+    .inner--line:after {
+      width: calc(100% - 130px) !important;
+      left: 130px !important;
+    }
+  }
+  .family-photo__section {
+    .inner--line:after {
+      width: calc(100% - 230px) !important;
+      left: 230px !important;
+    }
+  }
+  .hair-makeup__section {
+    .inner--line:after {
+      width: calc(100% - 190px) !important;
+      left: 190px !important;
+    }
+  }
+  /* Price Page End */
+
+  /* Contact Page start */
+  .wpcf7-form-control-wrap {
+    width: 100% !important;
+  }
+  /* Contact Page start */
 }
 @media screen and (max-width: 575px) {
+  .footer-contact {
+    min-width: initial !important;
+  }
   .d-xs-none {
     display: none;
   }
@@ -77,6 +227,27 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .footer-contact {
+    padding: 10px 20px !important;
+    width: 100% !important;
+  }
+  .footer-contact__tel {
+    font-size: 25px !important;
+    background: $color-primary;
+    margin-bottom: 5px;
+    height: 68px;
+    line-height: 66px;
+  }
+  .footer-contact__link {
+    padding: 12px 20px !important;
+    height: 68px;
+    line-height: 45px;
+  }
+  .footer-contact__inner {
+    margin: 10px auto 0 auto !important;
+  }
+}
 @media screen and (min-width: 755px) and (max-width: 959px) {
   /* Service section start */
   .service .service__section .service__section--col, .gallery .gallery__section .service__section--col {
